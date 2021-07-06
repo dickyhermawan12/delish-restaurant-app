@@ -31,7 +31,7 @@ const FaveButtonPresenter = {
   _renderFave() {
     this._faveButtonContainer.innerHTML = createFaveButtonTemplate();
 
-    const faveButton = document.querySelector('#faveButton');
+    const faveButton = document.querySelector('#favebutton');
     faveButton.addEventListener('click', async () => {
       await FavoriteRestaurantIdb.putRestaurant(this._restaurant);
       modalInitiator.init({
@@ -46,7 +46,7 @@ const FaveButtonPresenter = {
   _renderUnfave() {
     this._faveButtonContainer.innerHTML = createUnfaveButtonTemplate();
 
-    const faveButton = document.querySelector('#faveButton');
+    const faveButton = document.querySelector('#favebutton');
     faveButton.addEventListener('click', async () => {
       await FavoriteRestaurantIdb.deleteRestaurant(this._restaurant.id);
       modalInitiator.init({

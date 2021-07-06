@@ -26,7 +26,7 @@ const reviewCards = (reviews) => {
     customerReview += `
     <div class="review__card">
       <div class="review__header">
-        <h3 class="reviewer__name">${review.name}</h3>
+        <h2 class="reviewer__name">${review.name}</h2>
         <p class="review__date">${review.date}</p>
       </div>
       <p class="review__main">
@@ -103,14 +103,14 @@ const createRestaurantDetailTemplate = (restaurant) => `
   <h1 class="labels">Menus</h1>
   <div class="restaurant__menus">
     <div class="foods">
-      <h3 class="foods__title">Foods</h3>
+      <h2 class="foods__title">Foods</h2>
       <ul class="foods__list">
         ${menuList(restaurant.menus.foods)}
       </ul>
     </div>
     <hr>
     <div class="drinks">
-      <h3 class="drinks__title">Drinks</h3>
+      <h2 class="drinks__title">Drinks</h2>
       <ul class="drinks__list">
         ${menuList(restaurant.menus.drinks)}
       </ul>
@@ -162,21 +162,23 @@ const createPopupModal = (data) => `
 `;
 
 const createEmptyFavoriteNote = () => `
-  <div class="empty__container">
-    <h3 class="empty__alert">Oops...</h3>
-    <p class="empty__message">It seems that you have not favorited any restaurants yet!</p>
-    <a href="/#">Add some restaurant here</a>
-  </div>
+  <div id="emptynote">
+    <div class="empty__container">
+      <h2 class="empty__alert">Oops...</h2>
+      <p class="empty__message">It seems that you have not favorited any restaurants yet!</p>
+      <a href="/#">Add some restaurant here</a>
+    </div>
+</div>
 `;
 
 const createFaveButtonTemplate = () => `
-  <button aria-label="add this restaurant as your favorite" id="faveButton" class="fave">
+  <button aria-label="add this restaurant as your favorite" id="favebutton" class="fave">
     <i class="fa fa-heart-o" aria-hidden="true"></i>
   </button>
 `;
 
 const createUnfaveButtonTemplate = () => `
-  <button aria-label="remove this restaurant from your favorite" id="faveButton" class="fave">
+  <button aria-label="remove this restaurant from your favorite" id="favebutton" class="fave">
     <i class="fa fa-heart" aria-hidden="true"></i>
   </button>
 `;
