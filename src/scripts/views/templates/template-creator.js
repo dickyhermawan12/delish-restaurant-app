@@ -1,4 +1,6 @@
 import CONFIG from '../../globals/config';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
 const categoriesList = (categories) => {
   let restaurantCategory = '';
@@ -54,9 +56,11 @@ const createRestaurantCard = (restaurant) => `
         <p>${restaurant.city}</p>
       </div>
       <img
-        class="list-item__thumbnail"
-        src="${CONFIG.BASE_IMAGE_URL}small/${restaurant.pictureId}"
+        class="lazyload list-item__thumbnail"
+        data-src="${CONFIG.BASE_IMAGE_URL}small/${restaurant.pictureId}"
         alt="${restaurant.name}}"
+        height="250px"
+        width="110%"
       />
     </div>
     <div class="list-item__content">

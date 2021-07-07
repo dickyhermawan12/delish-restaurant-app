@@ -66,7 +66,7 @@ header .container {
 
 .header__logo {
   margin: auto 1.4em;
-  height: 5.3rem;
+  height: 5.2rem;
   display: inline-block;
 }
 
@@ -139,7 +139,7 @@ header .container {
   min-height: 380px;
   width: 100%;
   text-align: center;
-  background-image: url("/images/hero.jpg");
+  background-image: url("/images/hero-large.jpg");
   background-blend-mode: overlay;
   background-position: center;
   background-color: #434343;
@@ -268,7 +268,6 @@ main {
 
 .list-item__thumbnail {
   position: relative;
-  height: 25rem;
 }
 
 .list-item__rating {
@@ -371,7 +370,6 @@ footer p {
 }
 
 .restaurant__picture > img {
-  width: inherit;
   border-radius: 1rem;
 }
 

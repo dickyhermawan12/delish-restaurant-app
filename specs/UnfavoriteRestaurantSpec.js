@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
-import * as TestFactories from './helpers/testFactories';
 import FavoriteRestaurantIdb from '../src/scripts/data/favorite-restaurant-idb';
+import * as TestFactories from './helpers/testFactories';
 
 describe('Unfavoriting A Restaurant', () => {
   const addFaveButtonContainer = () => {

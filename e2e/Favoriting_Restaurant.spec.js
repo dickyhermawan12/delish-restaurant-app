@@ -8,7 +8,7 @@ Before(({ I }) => {
 });
 
 Scenario('showing empty favorited movies', ({ I }) => {
-  I.seeElement('.emptynote');
+  I.seeElement('#emptynote');
   I.see('It seems that you have not favorited any restaurants yet!', '.empty__message');
 });
 
@@ -40,6 +40,6 @@ Scenario('favoriting and unfavoriting one restaurant', async ({ I }) => {
   I.click('#favebutton');
 
   I.amOnPage('/#/favorite');
-  I.seeElement('.emptynote');
+  I.seeElement('#emptynote');
   I.see('It seems that you have not favorited any restaurants yet!', '.empty__message');
 });

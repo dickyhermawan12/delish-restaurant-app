@@ -80,6 +80,10 @@
     border-top: 1px solid #e0e0e0;
   }
 
+  #hero {
+    background-image: url("/images/hero-small.jpg");
+  }
+
   .list-item__thumbnail {
     position: relative;
     width: 100%;
@@ -140,6 +144,10 @@
   .empty__container,
   .modal .modal__content {
     max-width: 80vw;
+  }
+
+  #hero {
+    background-image: url("/images/hero-medium.jpg");
   }
 }
 
