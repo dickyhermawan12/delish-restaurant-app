@@ -81,6 +81,8 @@ const createRestaurantDetailTemplate = (restaurant) => `
       <img
         src="${CONFIG.BASE_IMAGE_URL}medium/${restaurant.pictureId}"
         alt="${restaurant.name}"
+        width="100%"
+        height="410px"
       />
     </div>
     <div class="details">
