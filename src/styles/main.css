@@ -375,6 +375,10 @@ footer p {
   height: auto;
 }
 
+.restaurant__desc {
+  padding: 0 10rem;
+}
+
 .details {
   display: flex;
   flex-direction: column;

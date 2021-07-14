@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start-dev": "webpack-dev-server --config webpack.dev.js",
+    "lint": "eslint ./src",
     "build": "webpack --config webpack.prod.js",
     "build-image": "node sharp.js",
     "test": "karma start",
@@ -45,6 +46,7 @@
     "whatwg-fetch": "^3.2.0"
   },
   "dependencies": {
+    "@codeceptjs/configure": "^0.6.2",
     "idb": "^6.1.2",
     "lazysizes": "^5.3.2",
     "regenerator-runtime": "^0.13.5",

@@ -106,6 +106,9 @@ const createRestaurantDetailTemplate = (restaurant) => `
     </div>
   </div>
 
+  <h1 class="labels">Description</h1>
+  <p class="restaurant__desc">${restaurant.description}</p>
+
   <h1 class="labels">Menus</h1>
   <div class="restaurant__menus">
     <div class="foods">

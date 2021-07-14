@@ -20,6 +20,10 @@
   #restaurant-details__container {
     margin-top: 10rem;
   }
+
+  #favorite__container {
+    margin-top: 5rem;
+  }
 }
 
 @media screen and (min-width: 650px) {
@@ -148,6 +152,10 @@
 
   #hero {
     background-image: url("/images/hero-medium.jpg");
+  }
+
+  .restaurant__desc {
+    padding: 0;
   }
 }
 

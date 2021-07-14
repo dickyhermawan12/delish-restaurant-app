@@ -9,7 +9,7 @@ const favorite = {
   async render() {
     window.scrollTo(0, 0);
     return `
-      <section class="content">
+      <section class="content" id="favorite__container">
         <div class="explore__favorites" id="catalogues">
           <h1 class="labels" tabindex="0">
             Your Favs <span class="font-red">Restaurants</span>
